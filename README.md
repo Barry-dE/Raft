@@ -1,8 +1,7 @@
-# React + Vite
+=======
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Raft
 
-Currently, two official plugins are available:
+Landing page for a fintech company
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> > > > > > > 0afb2e4ea617f0a475fc33a126ac0a03fe4a9e0f
