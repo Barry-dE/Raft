@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  height: 6.5rem;
+  border-bottom: 1px solid $hero-h2-text-color;
+
+  &_nav {
+    width: 100%;
+    height: 100%;
+    @include flex(space-between, center, _);
+    padding: 0 $padding-nav;
+
+    &_item-1 {
+      @include flex(space-between, center, 0.5rem);
+    }
+
+    &_item-2 {
+      ul {
+        width: 100%;
+        @include flex(space-between, center, 4rem);
+        color: $hero-h2-text-color;
+        font-size: 1.7rem;
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &_item-3 {
+      ul {
+        color: $slider-button-color;
+        width: 100%;
+        @include flex(space-between, center, 2rem);
+        font-size: 1.7rem;
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.header_nav_item-3-button {
+  background-color: $button-color;
+  display: inline-block;
+  padding: 1.3rem 2.3rem;
+  border-radius: $border-radius;
+}
