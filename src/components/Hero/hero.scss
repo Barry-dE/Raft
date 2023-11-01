@@ -1,0 +1,41 @@
+.heroWrapper {
+  width: $width;
+  height: 100vh;
+  @include flex(center, _, _);
+  line-height: 1.4;
+  &_text-wrapper {
+    width: 60%;
+    @include flex(center, center, _);
+    flex-direction: column;
+    span {
+      display: block;
+      text-align: center;
+    }
+    &_btn {
+      padding: 1.3rem 2.3rem;
+      border-radius: $border-radius;
+      background-color: $button-color;
+      color: $slider-button-color;
+      font-size: $font-nav;
+    }
+    h1 {
+      font-size: 7rem;
+      font-weight: 400;
+    }
+    &_paragraph {
+      font-size: $font-nav;
+      padding: 0.5rem 1.2rem;
+      background-color: darken($hero-intro-button-bg-color, 50);
+      color: $hero-intro-button-text-color;
+      border-radius: $border-radius;
+    }
+    &_paragraph-2 {
+      font-size: 1.8rem;
+      color: $hero-h2-text-color;
+    }
+
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
