@@ -1,0 +1,13 @@
+.featuredOnWrapper {
+  width: $width;
+  max-width: 65rem;
+  @include flex(space-between, center, 4rem);
+
+  &_item {
+    figure {
+      img {
+        width: 8rem;
+      }
+    }
+  }
+}
