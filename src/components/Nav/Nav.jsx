@@ -1,10 +1,10 @@
 import "./nav.scss";
-import raftLogo from "../../assets/images/import.png";
+import raftLogo from "/import.png";
 
 function Nav() {
   return (
     <div className="header">
-      <div className="header_nav">
+      <nav className="header_nav">
         <div className="header_nav_item-1">
           <figure>
             <img src={raftLogo} alt="Raft logo" />
@@ -24,7 +24,7 @@ function Nav() {
             <li className="header_nav_item-3-button">Get Started</li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
   );
 }

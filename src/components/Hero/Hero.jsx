@@ -1,12 +1,12 @@
 import "./hero.scss";
-import { GrNext } from "react-icons/gr";
+import { IoIosArrowForward } from "react-icons/io";
 function Hero() {
   return (
     <section className="heroWrapper">
       <div className="heroWrapper_text-wrapper">
         <p className="heroWrapper_text-wrapper_paragraph">
           Introducing Raft cards
-          {GrNext}
+          <span>{IoIosArrowForward}</span>
         </p>
 
         <h1>
