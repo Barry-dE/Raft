@@ -1,0 +1,21 @@
+.navigation {
+  width: 100%;
+  height: 6.7rem;
+  border-bottom: 1px solid $color-mine-shaft;
+
+  &_wrapper {
+    width: 100%;
+    height: 100%;
+    @extend %center;
+    padding: 0 4rem;
+    @extend %description-16;
+  }
+
+  &_logo {
+    &_wrapper {
+      @extend %center;
+      gap: 4rem;
+      @extend %title-24;
+    }
+  }
+}
