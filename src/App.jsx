@@ -1,14 +1,15 @@
-import Featured from "./components/Featured/Featured";
-import Hero from "./components/Hero/Hero";
+import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
+// import Nav from "./components/Nav/Nav";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Hero />
-      <Featured />
+      <Header>
+        <Nav />
+      </Header>
     </>
   );
 }
+
 export default App;

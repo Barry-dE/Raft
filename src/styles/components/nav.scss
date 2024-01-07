@@ -18,4 +18,25 @@
       @extend %title-24;
     }
   }
+
+  &_info {
+    &_items {
+      @extend %center;
+      gap: 4rem;
+    }
+  }
+
+  &_account-actions {
+    &_items {
+      @extend %center;
+      gap: 4rem;
+    }
+
+    &_item--button {
+      display: inline-block;
+      background-color: $color-forest-green;
+      padding: 1.2rem;
+      border-radius: 10rem;
+    }
+  }
 }

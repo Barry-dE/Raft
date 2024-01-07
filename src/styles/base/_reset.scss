@@ -8,18 +8,19 @@
 
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  height: 100vh;
-  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px This will make scaling down the contents to fit a viewport very easy when i want to make it responsive
+  // overflow-x: hidden;
+  // overflow-y: scroll;
+  height: 100%;
+  font-size: calc(100vw / 1920 * 10);
+  line-height: 1;
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   line-height: 1;
-  background-color: $primary-color;
-  color: #fff;
+  background-color: $color-black;
+  color: $color-white;
 }
 
 li {
@@ -30,4 +31,45 @@ a:link,
 a:active {
   color: currentColor;
   text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
