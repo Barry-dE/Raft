@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
 import Nav from "./components/Nav/Nav";
-// import Nav from "./components/Nav/Nav";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Header>
         <Nav />
       </Header>
+      <Hero />
     </>
   );
 }
