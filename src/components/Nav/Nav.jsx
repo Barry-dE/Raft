@@ -1,32 +1,42 @@
-import "./nav.scss";
-import raftLogo from "/import.png";
+// import logoImage from "./src/assets/logo.png";
+import "../../styles/components/nav.scss";
 
-function Nav() {
+export default function Nav() {
   return (
-    <div className="header">
-      <nav className="header_nav">
-        <div className="header_nav_item-1">
-          <figure>
-            <img src={raftLogo} alt="Raft logo" />
-          </figure>
-          <h1>Raft</h1>
+    <nav className="navigation">
+      <div className="navigation_wrapper">
+        <div className="navigation_logo">
+          <div className="navigation_logo_wrapper">
+            <figure className="navigation_logo_media">
+              <img
+                // src={logoImage}
+                // alt="Logo of Raft"
+                className="navigation_logo_media_image"
+              />
+            </figure>
+            <p className="navigation_logo_text">Raft</p>
+          </div>
         </div>
-        <div className="header_nav_item-2">
-          <ul>
-            <li>Solutions</li>
-            <li>Learn</li>
-            <li>About</li>
-          </ul>
+        <div className="navigation_info">
+          <div className="naviagtion_info_wrapper">
+            <ul className="navigation_info_items">
+              <li className="navigation_info_item">Solutions</li>
+              <li className="navigation_info_item">Learn</li>
+              <li className="navigation_info_item">About</li>
+            </ul>
+          </div>
         </div>
-        <div className="header_nav_item-3 ">
-          <ul>
-            <li>Login</li>
-            <li className="header_nav_item-3-button">Get Started</li>
-          </ul>
+        <div className="navigation_account-actions">
+          <div className="navigation_account-actions_wrapper">
+            <ul className="navigation_account-actions_items">
+              <li className="navigation_account-actions_item">Login</li>
+              <li className="navigation_account-actions_item--button">
+                Get Started
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
-
-export default Nav;
