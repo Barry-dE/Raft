@@ -1,5 +1,7 @@
 %green-button-hero {
   width: 14.6rem;
+  color: $color-white;
   border-radius: 10rem;
   @extend %description-16;
+  background-color: $color-forest-green;
 }

@@ -1,0 +1,58 @@
+.hero {
+  height: calc(90vh - 6.7rem);
+  width: 100%;
+  @include flex(center, center, _);
+
+  &_wrapper {
+    background-image: url("../../assets/Grid.png");
+    width: 98rem;
+    height: fit-content;
+    background-size: cover; /* Adjust to your preference */
+    background-position: top; /* Adjust to your preference */
+    background-repeat: no-repeat;
+    @extend %center;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  &_info {
+    height: 3.2rem;
+    background-color: darken($color-dusty-gray, 44);
+    padding: 0 1.2rem;
+    border-radius: 10rem;
+    border: 0.01px solid $color-alto;
+    @extend %description-16;
+    &_wrapper {
+      width: $width;
+      height: $height;
+      @extend %center;
+      gap: 1rem;
+    }
+  }
+
+  &_title {
+    @extend %title-96;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    word-spacing: 0.1rem;
+    display: block;
+  }
+
+  &_description {
+    &_text {
+      @extend %description-24;
+      font-weight: 300;
+      text-align: center;
+      line-height: 1.3;
+    }
+  }
+
+  &_button {
+    &_item {
+      outline: none;
+      border: none;
+      @extend %green-button-hero;
+      height: 5.1rem;
+    }
+  }
+}

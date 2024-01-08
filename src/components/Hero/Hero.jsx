@@ -1,18 +1,23 @@
+import { IoChevronForward } from "react-icons/io5";
+import "/src/styles/components/hero.scss";
+
+
 function Hero() {
   return (
     <section className="hero">
       <div className="hero_wrapper">
         <div className="hero_info">
           <div className="hero_info_wrapper">
-            <p className="hero_info_text">Introducing Raft cards</p>
-            <span className="hero_info_icon">icon</span>
+            <p className="hero_info_text">Introducing Raft Cards</p>
+            <span className="hero_info_icon">
+              <IoChevronForward />
+            </span>
           </div>
         </div>
         <div className="hero_title">
           <div className="hero_title_wrapper">
-            <h1 className="hero_title_text">
-              Building the future of <br /> banking
-            </h1>
+            <span className="hero_title_text">Building the future of</span>
+            <div className="hero_title_text">banking</div>
           </div>
         </div>
         <div className="hero_description">

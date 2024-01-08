@@ -1,4 +1,4 @@
-// import logoImage from "./src/assets/logo.png";
+import logoImage from "../../assets/logo.png";
 import "../../styles/components/nav.scss";
 
 export default function Nav() {
@@ -9,8 +9,8 @@ export default function Nav() {
           <div className="navigation_logo_wrapper">
             <figure className="navigation_logo_media">
               <img
-                // src={logoImage}
-                // alt="Logo of Raft"
+                src={logoImage}
+                alt="Logo of Raft"
                 className="navigation_logo_media_image"
               />
             </figure>
