@@ -1,0 +1,119 @@
+.features {
+  height: 100%;
+  width: 100%;
+  margin-top: 3rem;
+
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &_text {
+    width: 89.6rem;
+    height: 26.2rem;
+    margin-top: 7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.3rem;
+
+    &_title {
+      @extend %title-76;
+      font-weight: 400;
+      span {
+        display: block;
+      }
+
+      &_description {
+        @extend %description-20;
+        text-align: center;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &_grid_layouts {
+    width: 100%;
+    height: 100%;
+    &_wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &_grid_layout_wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 12rem;
+  }
+
+  &_grid_layout_item {
+    height: 50rem;
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    &--1 {
+      overflow: hidden;
+      background-color: $color-cod-gray;
+      grid-column: span 2;
+      figure {
+        width: 100%;
+        height: 100%;
+        img {
+          @extend %cover;
+          top: -14rem;
+        }
+      }
+    }
+    &--2 {
+      background-color: $color-cod-gray;
+      figure {
+        width: 100%;
+        height: 100%;
+        img {
+          @extend %cover;
+          top: -13rem;
+        }
+      }
+    }
+    &--3 {
+      background-color: $color-cod-gray;
+      figure {
+        width: 100%;
+        height: 100%;
+        img {
+          top: -10%;
+          @extend %cover;
+        }
+      }
+    }
+    &--4 {
+      background-color: $color-cod-gray;
+      figure {
+        width: 100%;
+        height: 100%;
+        img {
+          @extend %cover;
+          top: -13rem;
+        }
+      }
+      grid-column: span 2;
+      overflow: hidden;
+    }
+
+    &_grid_content {
+      position: relative;
+      z-index: 999;
+      color: $color-white;
+    }
+  }
+}
