@@ -75,7 +75,7 @@ function Features() {
                           <p> + $50.00 Received from Miles Esther</p>
                         </div>
                       </div>
-
+                      <div className="features_grid_overlay"></div>
                       <div className="features_grid_content_box_item_title">
                         <h3>Seamless Payments</h3>
                         <p>

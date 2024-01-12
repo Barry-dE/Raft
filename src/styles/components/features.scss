@@ -81,6 +81,7 @@
       overflow: hidden;
       background-color: $color-cod-gray;
       grid-column: span 2;
+      position: relative;
       figure {
         width: 100%;
         height: 100%;
@@ -128,8 +129,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 1.9rem;
       &_item {
-        margin-top: -2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -151,6 +152,16 @@
           height: 6.8rem;
           @extend %description-16;
           background-color: $color-mine-shaft-2;
+          border: 1px solid transparent; /* Set a transparent border initially */
+          border-image-slice: 1;
+          border-image: linear-gradient(
+              to right,
+              rgba($color-white, 0),
+              rgba($color-white, 0.1),
+              rgba($color-white, 0.2),
+              rgba($color-white, 0)
+            )
+            1;
         }
 
         &--2 {
@@ -158,8 +169,55 @@
           height: 6.8rem;
           @extend %description-20;
           background-color: $color-mine-shaft-2;
+          border: 1px solid transparent; /* Set a transparent border initially */
+          border-image-slice: 1;
+          border-image: linear-gradient(
+              to right,
+              rgba($color-white, 0),
+              rgba($color-white, 0.1),
+              rgba($color-white, 0.2),
+              rgba($color-white, 0)
+            )
+            1;
         }
       }
     }
+  }
+
+  &_grid_content_box_item_title {
+    align-self: flex-start;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    left: 4%;
+    h3 {
+      @extend %title-32;
+      font-weight: 400;
+    }
+    p {
+      @extend %description-16;
+      span {
+        display: block;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  &_grid_overlay {
+    position: absolute;
+    width: 100%;
+    top: 28.4%;
+    height: 20rem;
+
+    background: linear-gradient(
+      to bottom,
+      rgba($color-cod-gray, 0),
+      rgba($color-cod-gray, 0.5),
+      rgba($color-cod-gray, 0.6),
+      rgba($color-cod-gray, 0.7),
+      rgba($color-cod-gray, 1),
+      rgba($color-cod-gray, 0)
+    );
   }
 }
