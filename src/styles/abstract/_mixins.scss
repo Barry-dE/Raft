@@ -26,3 +26,8 @@
   top: 0;
   width: 100%;
 }
+
+@mixin top($top) {
+  @extend %cover;
+  top: $top;
+}
