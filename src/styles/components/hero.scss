@@ -1,19 +1,20 @@
 .hero {
   height: calc(90vh - 6.7rem);
-  width: 100%;
-  @include flex(center, center, _);
+  width: $width;
+  @include flex(center, center, _, _);
 
   &_wrapper {
     background-image: url("../../assets/Grid.png");
     width: 98rem;
     height: fit-content;
-    background-size: cover; /* Adjust to your preference */
-    background-position: top; /* Adjust to your preference */
+    background-size: cover;
+    background-position: top;
     background-repeat: no-repeat;
     @extend %center;
     gap: 3rem;
     flex-direction: column;
   }
+
   &_info {
     height: 3.2rem;
     background-color: darken($color-dusty-gray, 44);

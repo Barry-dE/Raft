@@ -1,7 +1,8 @@
-@mixin flex($justify, $align, $gap) {
+@mixin flex($justify, $align, $gap, $flex-direction) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
+  flex-direction: $flex-direction;
   gap: $gap;
 }
 
@@ -17,14 +18,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-%cover {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 @mixin top($top) {
