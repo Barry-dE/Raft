@@ -1,223 +1,230 @@
 .features {
-  height: 100%;
-  width: 100%;
-  margin-top: 3rem;
-
-  &_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  &_text {
-    width: 89.6rem;
-    height: 26.2rem;
-    margin-top: 7rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1.3rem;
-
-    &_title {
-      @extend %title-76;
-      font-weight: 400;
-      span {
-        display: block;
-      }
-
-      &_description {
-        @extend %description-20;
-        text-align: center;
-        span {
-          display: block;
-        }
-      }
-    }
-  }
-
-  &_grid_layouts {
-    width: 100%;
     height: 100%;
-    &_wrapper {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  &_grid_layout_wrapper {
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    padding: 12rem;
-  }
-
-  &_grid_background--1 {
-    @include top(-14rem);
-  }
-
-  &_grid_background--2 {
-    @include top(-13rem);
-  }
-
-  &_grid_background--3 {
-    @include top(-10rem);
-  }
-
-  &_grid_background--4 {
-    @include top(-13rem);
-  }
-
-  &_grid_layout_item {
-    height: 50rem;
-    width: 100%;
-    border-radius: 1rem;
+    margin-top: 3rem;
     position: relative;
-    &--1 {
-      overflow: hidden;
-      background-color: $color-cod-gray;
-      grid-column: span 2;
-      position: relative;
-      figure {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    &--2 {
-      background-color: $color-cod-gray;
-      figure {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    &--3 {
-      background-color: $color-cod-gray;
-      figure {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    &--4 {
-      background-color: $color-cod-gray;
-      figure {
-        width: 100%;
-        height: 100%;
-      }
-      grid-column: span 2;
-      overflow: hidden;
-    }
-  }
-  &_grid_content {
-    @extend %cover;
-    color: $color-white;
-    z-index: 1;
-    &_wrapper {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-    }
 
-    &_box {
-      gap: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 1.9rem;
-      &_item {
+    &_wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1.6rem;
-        border-radius: 1.6rem;
-        span {
-          display: block;
-          width: 3rem;
-          figure {
-            img {
-              width: 3.6rem;
+        flex-direction: column;
+    }
+
+    &_text {
+        width: 89.6rem;
+        height: 26.2rem;
+        margin-top: 7rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.3rem;
+
+        &_title {
+            @extend %title-76;
+            font-weight: 400;
+
+            span {
+                display: block;
             }
-          }
-        }
 
-        &--1,
-        &--3 {
-          width: 35.6rem;
-          height: 6.8rem;
-          @extend %description-16;
-          background-color: $color-mine-shaft-2;
-          border: 1px solid transparent; /* Set a transparent border initially */
-          border-image-slice: 1;
-          border-image: linear-gradient(
-              to right,
-              rgba($color-white, 0),
-              rgba($color-white, 0.1),
-              rgba($color-white, 0.2),
-              rgba($color-white, 0)
-            )
-            1;
+            &_description {
+                @extend %description-20;
+                text-align: center;
+                line-height: 1.3;
+                span {
+                    display: block;
+                }
+            }
         }
+    }
 
+    &_grid_layouts {
+        width: 100%;
+        height: 100%;
+        &_wrapper {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &_grid_layout_wrapper {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        padding: 12rem;
+    }
+
+    &_grid_background--1 {
+        @include top(-14rem);
+    }
+
+    &_grid_background--2 {
+        @include top(-13rem);
+    }
+
+    &_grid_background--3 {
+        @include top(-10rem);
+    }
+
+    &_grid_background--4 {
+        @include top(-13rem);
+    }
+
+    &_grid_layout_item {
+        height: 50rem;
+        width: 100%;
+        border-radius: 1rem;
+        position: relative;
+        &--1 {
+            overflow: hidden;
+            background-color: $color-cod-gray;
+            grid-column: span 2;
+            position: relative;
+            figure {
+                width: 100%;
+                height: 100%;
+            }
+        }
         &--2 {
-          width: 44.8rem;
-          height: 6.8rem;
-          @extend %description-20;
-          background-color: $color-mine-shaft-2;
-          border: 1px solid transparent; /* Set a transparent border initially */
-          border-image-slice: 1;
-          border-image: linear-gradient(
-              to right,
-              rgba($color-white, 0),
-              rgba($color-white, 0.1),
-              rgba($color-white, 0.2),
-              rgba($color-white, 0)
-            )
-            1;
+            background-color: $color-cod-gray;
+            figure {
+                width: 100%;
+                height: 100%;
+            }
         }
-      }
+        &--3 {
+            background-color: $color-cod-gray;
+            figure {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &--4 {
+            background-color: $color-cod-gray;
+            figure {
+                width: 100%;
+                height: 100%;
+            }
+            grid-column: span 2;
+            overflow: hidden;
+        }
     }
-  }
+    &_grid_content {
+        @extend %cover;
+        color: $color-white;
+        z-index: 1;
+        &_wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
 
-  &_grid_content_box_item_title {
-    align-self: flex-start;
-    position: relative;
-    display: flex;
-    gap: 2rem;
-    flex-direction: column;
-    left: 4%;
-    h3 {
-      @extend %title-32;
-      font-weight: 400;
+        &_box {
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1.9rem;
+            &_item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1.6rem;
+                border-radius: 1.6rem;
+                span {
+                    display: block;
+                    width: 3rem;
+                    figure {
+                        img {
+                            @extend %featuresIconsSize;
+                        }
+                    }
+                }
+
+                &--1,
+                &--3 {
+                    width: 35.6rem;
+                    height: 6.8rem;
+                    @extend %description-16;
+                    background-color: $color-mine-shaft-2;
+                    border: 1px solid transparent; /* Set a transparent border initially */
+                    border-image-slice: 1;
+                    border-image: linear-gradient(
+                            to right,
+                            rgba($color-white, 0),
+                            rgba($color-white, 0.1),
+                            rgba($color-white, 0.2),
+                            rgba($color-white, 0)
+                        )
+                        1;
+                }
+
+                &--2 {
+                    width: 44.8rem;
+                    height: 6.8rem;
+                    @extend %description-20;
+                    background-color: $color-mine-shaft-2;
+                    border: 1px solid transparent; /* Set a transparent border initially */
+                    border-image-slice: 1;
+                    border-image: linear-gradient(
+                            to right,
+                            rgba($color-white, 0),
+                            rgba($color-white, 0.1),
+                            rgba($color-white, 0.2),
+                            rgba($color-white, 0)
+                        )
+                        1;
+                }
+            }
+        }
     }
-    p {
-      @extend %description-16;
-      span {
-        display: block;
-        line-height: 1.4;
-      }
+
+    &_grid_content_box_item_title {
+        align-self: flex-start;
+        position: relative;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        left: 4%;
+        h3 {
+            @extend %title-32;
+            font-weight: 400;
+        }
+        p {
+            @extend %description-16;
+            span {
+                display: block;
+                line-height: 1.4;
+            }
+        }
     }
-  }
 
-  &_grid_overlay {
-    position: absolute;
-    width: 100%;
-    top: 28.4%;
-    height: 20rem;
+    &_grid_overlay {
+        position: absolute;
+        width: 100%;
+        top: 28.4%;
+        height: 20rem;
+        @include overlay($color-cod-gray);
+    }
 
-    background: linear-gradient(
-      to bottom,
-      rgba($color-cod-gray, 0),
-      rgba($color-cod-gray, 0.5),
-      rgba($color-cod-gray, 0.6),
-      rgba($color-cod-gray, 0.7),
-      rgba($color-cod-gray, 1),
-      rgba($color-cod-gray, 0)
-    );
-  }
+    &_grid_content_investing {
+        @extend %cover;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_wrapper {
+            width: $width;
+            height: $height;
+        }
+    }
 }

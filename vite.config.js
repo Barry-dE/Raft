@@ -4,12 +4,9 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "./", // Set the base path to the root of your project
+  base: "./",
   resolve: {
-    // alias: {
-    //   "@": "./src",
-    // },
-    extensions: [".js", ".jsx", ".json", ".png", ".jpg", ".gif"],
+    extensions: [".js", ".jsx", ".json", ".png"],
   },
   css: {
     preprocessorOptions: {
@@ -17,9 +14,9 @@ export default defineConfig({
         additionalData: `
           @import './src/styles/abstract/_mixins.scss';
           @import './src/styles/abstract/_variables.scss';
-          @import './src/styles/utils/description.scss';
-          @import './src/styles/utils/titles.scss';
-          @import './src/styles/utils/buttons.scss';
+          @import './src/styles/shared/description.scss';
+          @import './src/styles/shared/titles.scss';
+          @import './src/styles/shared/buttons.scss';
         `,
       },
     },
