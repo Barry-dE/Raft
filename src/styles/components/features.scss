@@ -1,14 +1,13 @@
 .features {
-    height: 100%;
-    width: 100%;
+    height: $height;
+    width: $width;
     margin-top: 3rem;
     position: relative;
-
+    span {
+        display: block;
+    }
     &_wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        @include flex(center, center, _, column);
     }
 
     &_text {
@@ -16,9 +15,7 @@
         height: 26.2rem;
         margin-top: 7rem;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flex(space-between, _, _, column);
         padding: 1.3rem;
 
         &_title {
@@ -41,17 +38,17 @@
     }
 
     &_grid_layouts {
-        width: 100%;
-        height: 100%;
+        width: $width;
+        height: $height;
         &_wrapper {
-            width: 100%;
-            height: 100%;
+            width: $width;
+            height: $height;
         }
     }
 
     &_grid_layout_wrapper {
-        width: 100%;
-        height: 100%;
+        width: $width;
+        height: $height;
         display: grid;
         grid-gap: 2rem;
         grid-template-rows: repeat(2, 1fr);
@@ -77,7 +74,7 @@
 
     &_grid_layout_item {
         height: 50rem;
-        width: 100%;
+        width: $width;
         border-radius: 1rem;
         position: relative;
         &--1 {
@@ -85,31 +82,15 @@
             background-color: $color-cod-gray;
             grid-column: span 2;
             position: relative;
-            figure {
-                width: 100%;
-                height: 100%;
-            }
         }
         &--2 {
             background-color: $color-cod-gray;
-            figure {
-                width: 100%;
-                height: 100%;
-            }
         }
         &--3 {
             background-color: $color-cod-gray;
-            figure {
-                width: 100%;
-                height: 100%;
-            }
         }
         &--4 {
             background-color: $color-cod-gray;
-            figure {
-                width: 100%;
-                height: 100%;
-            }
             grid-column: span 2;
             overflow: hidden;
         }
@@ -119,25 +100,16 @@
         color: $color-white;
         z-index: 1;
         &_wrapper {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+            width: $width;
+            height: $height;
+            @include flex(space-around, center, _, column);
         }
 
         &_box {
-            gap: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(_, center, 1rem, column);
             margin-top: 1.9rem;
             &_item {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 1.6rem;
+                @include flex(center, center, 1.6rem, _);
                 border-radius: 1.6rem;
                 span {
                     display: block;
@@ -189,42 +161,79 @@
 
     &_grid_content_box_item_title {
         align-self: flex-start;
-        position: relative;
-        display: flex;
-        gap: 2rem;
-        flex-direction: column;
-        left: 4%;
+        margin-left: 4rem;
+        @include flex(_, _, 2rem, column);
+
         h3 {
-            @extend %title-32;
-            font-weight: 400;
+            @extend %featuresHeader-3;
         }
         p {
-            @extend %description-16;
-            span {
-                display: block;
-                line-height: 1.4;
-            }
+            @extend %featuresParagraph;
         }
     }
 
     &_grid_overlay {
         position: absolute;
-        width: 100%;
+        width: $width;
         top: 28.4%;
         height: 20rem;
         @include overlay($color-cod-gray);
     }
 
     &_grid_content_investing {
-        @extend %cover;
-        gap: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        width: $width;
+        height: $height;
+        overflow: hidden;
         &_wrapper {
-            width: $width;
             height: $height;
+            width: $width;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
         }
+        @extend %cover;
+    }
+
+    &_grid_contents_content_wrapper {
+        @extend %description-16;
+        width: $width;
+        position: relative;
+    }
+
+    &_grid_contents_content {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        &--1 {
+            max-width: 37rem;
+            height: 6.4rem;
+            padding-left: 1.6rem;
+            background-color: $color-mine-shaft-2;
+            right: 0;
+        }
+        figure {
+            img {
+                @extend %featuresIconsSize;
+            }
+        }
+    }
+}
+
+.smart_investing {
+    @extend %featuresContainerDescription;
+    position: relative;
+    bottom: -2.3rem;
+}
+.smart_investing_title {
+    @extend %title-32;
+    font-weight: 400;
+}
+
+.smart_investing_description {
+    @extend %description-16;
+    font-weight: 400;
+    span {
+        line-height: 1.4;
+        text-wrap: nowrap;
     }
 }

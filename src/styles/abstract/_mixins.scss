@@ -40,3 +40,22 @@
 %featuresIconsSize {
     width: 3.6rem;
 }
+
+%featuresHeader-3 {
+    @extend %title-32;
+    font-weight: normal;
+    span {
+        display: block;
+    }
+}
+
+%featuresParagraph {
+    @extend %description-16;
+    line-height: 1.4;
+}
+
+%featuresContainerDescription {
+    @include flex(_, _, 2rem, column);
+    align-self: flex-start;
+    margin-left: 4rem;
+}
