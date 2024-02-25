@@ -1,77 +1,49 @@
 .hero {
-    height: calc(90vh - 6.7rem);
-    width: $width;
-    @include flex(center, center, _, _);
+    @extend %dimension;
+}
 
-    &_wrapper {
-        width: 98rem;
-        height: 46.3rem;
-        @extend %center;
-        gap: 3rem;
-        flex-direction: column;
-        position: relative;
-    }
+.hero__Wrapper {
+    @extend %dimension;
+    @include flex(center, _, _, _);
+}
 
-    &_info {
-        height: 3.2rem;
-        width: fit-content;
-        background-color: darken($color-dusty-gray, 44);
-        padding: 0 1.2rem;
-        border-radius: 10rem;
-        border: 0.01px solid $color-alto;
+.hero__content {
+    width: 89.6rem;
+    height: 44.3rem;
+    border: 1px solid red;
+    margin-top: calc(16.7rem - 6.7rem);
+}
+
+.hero__content__wrapper {
+    @extend %dimension;
+    @include flex(space-between, center, _, column);
+}
+
+.hero__content__marquee {
+    width: 23rem;
+    height: 3.2rem;
+    border: 1px solid red;
+    border-radius: 10rem;
+    background-color: darken($color-dusty-gray, 0.4);
+}
+
+.hero__content__marquee__wrapper {
+    @extend %dimension;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1.2rem;
+    P {
         @extend %description-16;
-        &_wrapper {
-            width: $width;
-            height: $height;
-            @extend %center;
-            gap: 1rem;
-        }
     }
+}
 
-    &_title {
-        @extend %title-96;
-        font-weight: 400;
-        text-align: center;
-        line-height: 1.2;
-        word-spacing: 0.1rem;
-    }
+.hero__content__marquee__text__paragraph {
+}
 
-    &_description {
-        &_text {
-            @extend %description-24;
-            font-weight: 300;
-            text-align: center;
-            line-height: 1.3;
-        }
-    }
+.hero__content__title {
+}
 
-    &_button {
-        &_item {
-            outline: none;
-            border: none;
-            @extend %green-button-hero;
-            height: 5.1rem;
-        }
-    }
-
-    &_content_wrapper {
-        width: $width;
-        height: $height;
-        position: absolute;
-        top: 0;
-        @include flex(space-between, center, _, column);
-    }
-
-    &_overlay {
-        width: $width;
-        height: $height;
-        figure {
-            width: $width;
-            height: $height;
-            img {
-                @extend %cover;
-                object-fit: cover;
-            }
-        }
-    }
+.hero__content__title_text {
 }

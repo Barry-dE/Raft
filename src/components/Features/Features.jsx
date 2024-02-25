@@ -1,5 +1,5 @@
 import '../../styles/components/features.scss';
-import GridOneSvg from '../../assets/Vector_features.svg';
+// import GridOneSvg from '../../assets/Vector_features.svg';
 import GridOne from './GridOne';
 import GridTwo from './GridTwo';
 
@@ -31,7 +31,7 @@ function Features() {
                                     <figure>
                                         <img
                                             className="features_grid_background--1"
-                                            src={GridOneSvg}
+                                            // src={GridOneSvg}
                                             alt="Grid background"
                                             width={400}
                                         />
@@ -49,7 +49,7 @@ function Features() {
                                     <figure>
                                         <img
                                             className="features_grid_background--3"
-                                            src={GridOneSvg}
+                                            // src={GridOneSvg}
                                             alt="Grid background"
                                         />
                                     </figure>
@@ -58,7 +58,7 @@ function Features() {
                                     <figure>
                                         <img
                                             className="features_grid_background--4"
-                                            src={GridOneSvg}
+                                            // src={GridOneSvg}
                                             alt="Grid background"
                                         />
                                     </figure>

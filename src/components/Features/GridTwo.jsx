@@ -1,13 +1,16 @@
 import '../../styles/components/features.scss';
-import GridOneSvg from '../../assets/Vector_features.svg';
-import crypto from '../../assets/crypto.svg';
+// import GridOneSvg from '../../assets/Vector_features.svg';
+import cash from '../../assets/crypto.svg';
+import cryptocurrency from '../../assets/Frame-87.svg';
+// import stack from '/src/assets/stack.svg';
+
 function GridTwo() {
     return (
         <div className="features_grid_layout_item features_grid_layout_item--2">
             <figure className="features_grid_layout_item_grid">
                 <img
                     className="features_grid_background--2"
-                    src={GridOneSvg}
+                    // src={GridOneSvg}
                     alt="Grid background"
                     width={400}
                 />
@@ -19,27 +22,27 @@ function GridTwo() {
                             <figure className="features_grid_contents_content_svg ">
                                 <img
                                     className="features_grid_contents_content_svg_icon"
-                                    src={crypto}
+                                    src={cryptocurrency}
                                     alt="cryptocurrency"
                                 />
                             </figure>
                             <p>Cryptocurrency</p>
                         </div>
-                        <div className="features_grid_contents_content">
+                        <div className="features_grid_contents_content features_grid_contents_content--2">
                             <figure className="features_grid_contents_content_svg ">
                                 <img
                                     className="features_grid_contents_content_svg_icon"
-                                    src={crypto}
-                                    alt="cryptocurrency"
+                                    src={cash}
+                                    alt="cash icon"
                                 />
                             </figure>
                             <p>Smart Portfolio Investing</p>
                         </div>
-                        <div className="features_grid_contents_content">
+                        <div className="features_grid_contents_content features_grid_contents_content--3">
                             <figure className="features_grid_contents_content_svg ">
                                 <img
                                     className="features_grid_contents_content_svg_icon"
-                                    src={crypto}
+                                    // src={stack}
                                     alt="cryptocurrency"
                                 />
                             </figure>
