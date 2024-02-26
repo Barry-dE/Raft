@@ -1,7 +1,7 @@
 import '../../styles/components/features.scss';
-// import GridOneSvg from '../../assets/Vector_features.svg';
-import GridOne from './GridOne';
-import GridTwo from './GridTwo';
+// // import GridOneSvg from '../../assets/Vector_features.svg';
+// import GridOne from './GridOne';
+// import GridTwo from './GridTwo';
 
 function Features() {
     return (

@@ -1,5 +1,5 @@
-import arrowIcon from '../../assets/arrow.png';
-import '../../styles/components/features.scss';
+// import arrowIcon from '../../assets/arrow.png';
+// import '../../styles/components/features.scss';
 
 function GridOne() {
     return (

@@ -1,5 +1,6 @@
 .hero {
     @extend %dimension;
+    margin-bottom: 10rem;
 }
 
 .hero__Wrapper {
@@ -8,23 +9,53 @@
 }
 
 .hero__content {
-    width: 89.6rem;
+    width: 97.6rem;
     height: 44.3rem;
-    border: 1px solid red;
     margin-top: calc(16.7rem - 6.7rem);
+    text-align: center;
+    line-height: 1.3;
+    position: relative;
+    &::after {
+        content: '';
+        height: 4rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    &::after {
+        background: linear-gradient(
+            to top,
+            $color-black 0%,
+            rgba($color-black, 0) 100%
+        );
+        bottom: 0;
+    }
+}
+
+.hero__content__gridBackground {
+    width: $width;
+    height: $height;
+    figure {
+        img {
+            @extend %cover;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
 }
 
 .hero__content__wrapper {
     @extend %dimension;
     @include flex(space-between, center, _, column);
+    @extend %cover;
 }
 
 .hero__content__marquee {
     width: 23rem;
     height: 3.2rem;
-    border: 1px solid red;
     border-radius: 10rem;
-    background-color: darken($color-dusty-gray, 0.4);
+    background-color: darken($color-dusty-gray, 30%);
 }
 
 .hero__content__marquee__wrapper {
@@ -36,6 +67,7 @@
     padding: 0 1.2rem;
     P {
         @extend %description-16;
+        color: $color-alto;
     }
 }
 
@@ -46,4 +78,26 @@
 }
 
 .hero__content__title_text {
+    @extend %title-96;
+    font-weight: 500;
+}
+
+.hero__content__title__description__text {
+    @extend %description-24;
+    color: $color-alto;
+}
+
+.hero__content__button {
+    margin-top: 3.2rem;
+    outline: none;
+    border: none;
+    width: 14.6rem;
+    height: 5.1rem;
+    border-radius: 10rem;
+    padding: 1.6rem 3.2rem;
+    @extend %description-16;
+    background: $color-forest-green;
+    color: $color-white;
+    position: relative;
+    z-index: 99;
 }

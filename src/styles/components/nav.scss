@@ -1,42 +1,46 @@
 .navigation {
-  width: $width;
-  height: 6.7rem;
-  border-bottom: 1px solid $color-mine-shaft;
-
-  &_wrapper {
     width: $width;
-    height: $height;
-    @extend %center;
-    padding: 0 4rem;
-    @extend %description-16;
-  }
+    height: 6.7rem;
+    border-bottom: 1px solid $color-mine-shaft;
 
-  &_logo {
     &_wrapper {
-      @extend %center;
-      gap: 0.4rem;
-      @extend %title-24;
-    }
-  }
-
-  &_info {
-    &_items {
-      @extend %center;
-      gap: 4rem;
-    }
-  }
-
-  &_account-actions {
-    &_items {
-      @extend %center;
-      gap: 4rem;
+        width: $width;
+        height: $height;
+        @extend %center;
+        padding: 0 4rem;
+        @extend %description-16;
     }
 
-    &_item--button {
-      display: inline-block;
-      background-color: $color-forest-green;
-      padding: 1.2rem;
-      border-radius: 10rem;
+    &_logo {
+        &_wrapper {
+            @extend %center;
+            gap: 0.4rem;
+            @extend %title-24;
+            &_media {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
     }
-  }
+
+    &_info {
+        &_items {
+            @extend %center;
+            gap: 4rem;
+        }
+    }
+
+    &_account-actions {
+        &_items {
+            @extend %center;
+            gap: 4rem;
+        }
+
+        &_item--button {
+            display: inline-block;
+            background-color: $color-forest-green;
+            padding: 1.2rem;
+            border-radius: 10rem;
+        }
+    }
 }

@@ -11,8 +11,8 @@ function App() {
                 <Nav />
             </Header>
             <Hero />
-            {/* <Companies />
-      <Features /> */}
+            <Companies />
+            {/* <Features /> */}
         </>
     );
 }

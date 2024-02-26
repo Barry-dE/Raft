@@ -1,8 +1,8 @@
-import '../../styles/components/features.scss';
-// import GridOneSvg from '../../assets/Vector_features.svg';
-import cash from '../../assets/crypto.svg';
-import cryptocurrency from '../../assets/Frame-87.svg';
-// import stack from '/src/assets/stack.svg';
+// import '../../styles/components/features.scss';
+// // import GridOneSvg from '../../assets/Vector_features.svg';
+// import cash from '../../assets/crypto.svg';
+// import cryptocurrency from '../../assets/Frame-87.svg';
+// // import stack from '/src/assets/stack.svg';
 
 function GridTwo() {
     return (
