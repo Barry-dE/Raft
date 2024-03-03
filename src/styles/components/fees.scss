@@ -1,0 +1,160 @@
+.fees {
+    @extend %dimension;
+    margin-top: 13rem;
+
+    &__wrapper {
+        @extend %dimension;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.fees__text {
+    width: 89.6rem;
+    height: 26.2rem;
+}
+
+.fees__text__title {
+    @extend %title-76;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.fees__text__description {
+    span {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        @extend %description-20;
+    }
+}
+
+.fees__gallery__media {
+    width: 129.6rem;
+    height: 61.5rem;
+    margin-top: 12.4rem;
+    position: relative;
+}
+
+.fees__gallery__media__image {
+    width: 129.6rem;
+    height: 61.5rem;
+    @extend %cover;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+.fees__gallery__media__icons {
+    position: absolute;
+    @extend %cover;
+    @extend %dimension;
+    z-index: 999;
+}
+
+.fees__gallery__media__icon {
+    width: 11.6rem;
+    height: 15.9rem;
+    gap: 0.8rem;
+    background-color: $color-white;
+    color: $color-black;
+    border-radius: 0.8rem;
+    display: flex;
+    border: 1px solid #070606;
+
+    justify-content: flex-start;
+    flex-direction: column;
+
+    figure {
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+
+    &--left {
+        position: absolute;
+        left: 16.7rem;
+        top: 16.7rem;
+        padding: 1.2rem 0.8rem;
+    }
+    &--right {
+        position: absolute;
+        left: 87.9rem;
+        bottom: 6.2rem;
+        padding: 1.2rem 0.8rem;
+    }
+}
+
+.fees__gallery__media__icon__green {
+    background-color: $color-fees-send;
+    @extend %icon-box;
+}
+
+.fees__gallery__media__icon__red {
+    background-color: $color-fees-receive;
+    @extend %icon-box;
+}
+
+.fees__gallery__media__icon__text {
+    height: 4.7rem;
+    width: 100%;
+}
+
+.first-child {
+    @extend %description-12;
+    width: 100%;
+}
+
+.second-child {
+    @extend %description-24;
+    font-weight: 400;
+}
+
+.fees__perks {
+    width: 129.6rem;
+    height: 8.7rem;
+    margin-top: 11.9rem;
+    margin-bottom: 13.2rem;
+}
+
+.fees__perks__wrapper {
+    @extend %dimension;
+    display: flex;
+    gap: 2.4rem;
+
+    figure {
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+}
+
+.fees__perks__items {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.fees__perks__item__icon {
+    display: flex;
+    gap: 1.5rem;
+    @extend %description-24;
+    font-weight: 400;
+    @extend %dimension;
+    height: 2.9rem;
+}
+
+.fees__perks__item__description {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+// .fees__gallery__media__icon {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
