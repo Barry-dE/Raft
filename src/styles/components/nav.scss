@@ -12,6 +12,10 @@
     }
 
     &_logo {
+        &_media_image {
+            width: 3.4rem;
+            height: 3.4rem;
+        }
         &_wrapper {
             @extend %center;
             gap: 0.4rem;

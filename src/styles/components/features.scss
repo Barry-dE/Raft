@@ -1,261 +1,66 @@
-.features {
-    height: $height;
-    width: $width;
-    margin-top: 3rem;
-    position: relative;
-    span {
-        display: block;
-    }
-    &_wrapper {
-        @include flex(center, center, _, column);
-    }
-
-    &_text {
-        width: 89.6rem;
-        height: 26.2rem;
-        margin-top: 7rem;
-        text-align: center;
-        @include flex(space-between, _, _, column);
-        padding: 1.3rem;
-
-        &_title {
-            @extend %title-76;
-            font-weight: 400;
-
-            span {
-                display: block;
-            }
-
-            &_description {
-                @extend %description-20;
-                text-align: center;
-                line-height: 1.3;
-                span {
-                    display: block;
-                }
-            }
-        }
-    }
-
-    &_grid_layouts {
-        width: $width;
-        height: $height;
-        &_wrapper {
-            width: $width;
-            height: $height;
-        }
-    }
-
-    &_grid_layout_wrapper {
-        width: $width;
-        height: $height;
-        display: grid;
-        grid-gap: 2rem;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        padding: 12rem;
-    }
-
-    &_grid_background--1 {
-        @include top(-14rem);
-    }
-
-    &_grid_background--2 {
-        @include top(-13rem);
-    }
-
-    &_grid_background--3 {
-        @include top(-10rem);
-    }
-
-    &_grid_background--4 {
-        @include top(-13rem);
-    }
-
-    &_grid_layout_item {
-        height: 50rem;
-        width: $width;
-        border-radius: 1rem;
-        position: relative;
-        &--1 {
-            overflow: hidden;
-            background-color: $color-cod-gray;
-            grid-column: span 2;
-            position: relative;
-        }
-        &--2 {
-            background-color: $color-cod-gray;
-        }
-        &--3 {
-            background-color: $color-cod-gray;
-        }
-        &--4 {
-            background-color: $color-cod-gray;
-            grid-column: span 2;
-            overflow: hidden;
-        }
-    }
-    &_grid_content {
-        @extend %cover;
-        color: $color-white;
-        z-index: 1;
-        &_wrapper {
-            width: $width;
-            height: $height;
-            @include flex(space-around, center, _, column);
-        }
-
-        &_box {
-            @include flex(_, center, 1rem, column);
-            margin-top: 1.9rem;
-            &_item {
-                @include flex(center, center, 1.6rem, _);
-                border-radius: 1.6rem;
-                span {
-                    display: block;
-                    width: 3rem;
-                    figure {
-                        img {
-                            @extend %featuresIconsSize;
-                        }
-                    }
-                }
-
-                &--1,
-                &--3 {
-                    width: 35.6rem;
-                    height: 6.8rem;
-                    @extend %description-16;
-                    background-color: $color-mine-shaft-2;
-                    border: 1px solid transparent; /* Set a transparent border initially */
-                    border-image-slice: 1;
-                    border-image: linear-gradient(
-                            to right,
-                            rgba($color-white, 0),
-                            rgba($color-white, 0.1),
-                            rgba($color-white, 0.2),
-                            rgba($color-white, 0)
-                        )
-                        1;
-                }
-
-                &--2 {
-                    width: 44.8rem;
-                    height: 6.8rem;
-                    @extend %description-20;
-                    background-color: $color-mine-shaft-2;
-                    border: 1px solid transparent; /* Set a transparent border initially */
-                    border-image-slice: 1;
-                    border-image: linear-gradient(
-                            to right,
-                            rgba($color-white, 0),
-                            rgba($color-white, 0.1),
-                            rgba($color-white, 0.2),
-                            rgba($color-white, 0)
-                        )
-                        1;
-                }
-            }
-        }
-    }
-
-    &_grid_content_box_item_title {
-        align-self: flex-start;
-        margin-left: 4rem;
-        @include flex(_, _, 2rem, column);
-
-        h3 {
-            @extend %featuresHeader-3;
-        }
-        p {
-            @extend %featuresParagraph;
-        }
-    }
-
-    &_grid_overlay {
-        position: absolute;
-        width: $width;
-        top: 28.4%;
-        height: 20rem;
-        @include overlay($color-cod-gray);
-    }
-
-    &_grid_content_investing {
-        width: $width;
-        height: $height;
-        overflow: hidden;
-        &_wrapper {
-            height: $height;
-            width: $width;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-        }
-        @extend %cover;
-    }
-
-    &_grid_contents_content_wrapper {
-        @extend %description-16;
-        width: $width;
-        display: flex;
-        gap: 1.6rem;
-        flex-direction: column;
-    }
-
-    &_grid_contents_content {
-        display: flex;
-        align-items: center;
-        align-self: flex-end;
-        gap: 1.2rem;
-        position: relative;
-        font-size: 2rem;
-
-        &--1 {
-            width: 37rem;
-            height: 6.4rem;
-            padding-left: 1.6rem;
-            background-color: $color-mine-shaft-2;
-            @extend %borderRadius;
-        }
-
-        &--2 {
-            width: 40.9rem;
-            padding-left: 1.6rem;
-            height: 7.6rem;
-            @extend %borderRadius;
-            background-color: $color-mine-shaft-2;
-        }
-
-        &--3 {
-            background-color: $color-mine-shaft-2;
-            width: 37rem;
-            height: 6.4rem;
-            @extend %borderRadius;
-            padding-left: 1.6rem;
-        }
-        figure {
-            img {
-                @extend %featuresIconsSize;
-            }
-        }
-    }
+.services {
+    height: 100%;
+    width: 100%;
+}
+.services__wrapper {
+    @extend %dimension;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.smart_investing {
-    @extend %featuresContainerDescription;
-    position: relative;
-    bottom: -2.3rem;
+.services__text {
+    width: 89.6rem;
+    height: 26.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
 }
-.smart_investing_title {
-    @extend %title-32;
+.services__text__title {
+    @extend %title-76;
     font-weight: 400;
+    text-align: center;
+}
+.services__text__description {
+    width: 71.8rem;
+    @extend %description-20;
+    margin-top: 2.4rem;
+    text-align: center;
 }
 
-.smart_investing_description {
-    @extend %description-16;
-    font-weight: 400;
-    span {
-        line-height: 1.4;
-        text-wrap: nowrap;
-    }
+.services__gridLayout__wrapper {
+    display: grid;
+    grid-template-columns: 82.2rem 44.2rem;
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+
+.services__grid__item {
+    position: relative;
+    background-color: $color-cod-gray;
+    overflow: hidden;
+}
+.services__grid__item--1 {
+}
+
+.services__grid__item--2 {
+    border: 1px solid rgb(168, 131, 131);
+}
+
+.services__grid__item--3 {
+}
+
+.services__grid__item--4 {
+    border: 1px solid rgb(55, 17, 151);
+}
+
+.services__grid__item--1,
+.services__grid__item--3,
+.services__grid__item--2,
+.services__grid__item--4 {
+    height: 48rem;
+    border-radius: 1.2rem;
 }

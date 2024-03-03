@@ -1,69 +1,40 @@
 import '../../styles/components/features.scss';
-// // import GridOneSvg from '../../assets/Vector_features.svg';
-// import GridOne from './GridOne';
-// import GridTwo from './GridTwo';
+import GridBackground from './GridBackground';
+import FeaturesGridOne from './FeaturesGridOne';
+import FeaturesGridThree from './FeaturesGridThree';
 
-function Features() {
+function Services() {
     return (
-        <section className="features">
-            <div className="features_wrapper">
-                <div className="features_text">
-                    <p className="features_text_title">
-                        <span>Elevate Your Financial</span>
-                        <span>Journey with RAFT</span>
-                    </p>
-                    <p className="features_text_title_description">
-                        <span className="block">
+        <section className=".services">
+            <div className="services__wrapper">
+                <div className="services__text">
+                    <div className="services__text__title">
+                        <p>Elevate Your Financial </p>
+                        <p> Journey with RAFT</p>
+                    </div>
+                    <div className="services__text__description">
+                        <p>
                             RAFT offers a world of financial possibilities. From
-                            investments to payments,
-                        </span>
-                        <span className="block">
-                            we&apos;ve got you covered. Join us and unlock your
-                            financial potential today.
-                        </span>
-                    </p>
+                            investments to payments, we&apos;ve got you covered.
+                            Join us and unlock your financial potential today.
+                        </p>
+                    </div>
                 </div>
-                <div className="features_grid_layouts">
-                    <div className="features_grid_layouts_wrapper">
-                        <div className="features_grid_layout">
-                            <div className="features_grid_layout_wrapper">
-                                <div className="features_grid_layout_item features_grid_layout_item--1">
-                                    <figure>
-                                        <img
-                                            className="features_grid_background--1"
-                                            // src={GridOneSvg}
-                                            alt="Grid background"
-                                            width={400}
-                                        />
-                                    </figure>
-                                    <div className="features_grid_content">
-                                        <div className="features_grid_content_wrapper">
-                                            <GridOne />
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* here */}
-                                <GridTwo />
-                                {/* here */}
-                                <div className="features_grid_layout_item features_grid_layout_item--3">
-                                    <figure>
-                                        <img
-                                            className="features_grid_background--3"
-                                            // src={GridOneSvg}
-                                            alt="Grid background"
-                                        />
-                                    </figure>
-                                </div>
-                                <div className="features_grid_layout_item features_grid_layout_item--4">
-                                    <figure>
-                                        <img
-                                            className="features_grid_background--4"
-                                            // src={GridOneSvg}
-                                            alt="Grid background"
-                                        />
-                                    </figure>
-                                </div>
-                            </div>
+                <div className="services__gridLayout">
+                    <div className="services__gridLayout__wrapper">
+                        <div className="services__grid__item services__grid__item--1">
+                            <GridBackground />
+                            <FeaturesGridOne />
+                        </div>
+                        <div className="services__grid__item services__grid__item--2">
+                            <GridBackground />
+                        </div>
+                        <div className="services__grid__item services__grid__item--3">
+                            <GridBackground />
+                            <FeaturesGridThree />
+                        </div>
+                        <div className="services__grid__item services__grid__item--4">
+                            <GridBackground />
                         </div>
                     </div>
                 </div>
@@ -71,4 +42,4 @@ function Features() {
         </section>
     );
 }
-export default Features;
+export default Services;

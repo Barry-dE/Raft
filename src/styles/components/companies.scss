@@ -1,48 +1,49 @@
 .companies {
-  width: $width;
-  height: max-content;
-  &_wrapper {
+    margin-bottom: 7rem;
     width: $width;
-    height: $height;
-    @include flex(center, center, _, column);
-  }
-
-  &_media {
-    width: $width;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10rem;
-
-    &_image {
-      width: 180rem;
-      border-radius: 2rem;
-    }
-  }
-
-  &_featured {
-    width: 86rem;
-    height: auto;
-    margin-bottom: 6rem;
+    height: max-content;
     &_wrapper {
-      width: $width;
-      height: $height;
-      @include flex(space-between, center, 7rem, column);
-
-      p {
-        @extend %description-20;
-        text-transform: uppercase;
-      }
-    }
-    &_logo {
-      width: $width;
-      @include flex(space-between, _, _, _);
+        width: $width;
+        height: $height;
+        @include flex(center, center, _, column);
     }
 
-    &_image {
-      &_media {
-        height: 4.5rem;
-        width: auto;
-      }
+    &_media {
+        width: $width;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10rem;
+
+        &_image {
+            width: 180rem;
+            border-radius: 2rem;
+        }
     }
-  }
+
+    &_featured {
+        width: 86rem;
+        height: auto;
+        margin-bottom: 6rem;
+        &_wrapper {
+            width: $width;
+            height: $height;
+            @include flex(space-between, center, 7rem, column);
+
+            p {
+                @extend %description-20;
+                text-transform: uppercase;
+            }
+        }
+        &_logo {
+            width: $width;
+            @include flex(space-between, _, _, _);
+        }
+
+        &_image {
+            &_media {
+                height: 4.5rem;
+                width: auto;
+            }
+        }
+    }
 }

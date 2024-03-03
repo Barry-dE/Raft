@@ -1,0 +1,9 @@
+.services__grid__background {
+    @extend %cover;
+    top: -12rem;
+
+    img {
+        @extend %cover;
+        object-fit: cover;
+    }
+}
