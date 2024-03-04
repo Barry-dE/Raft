@@ -1,4 +1,4 @@
-import logoImage from '/assets/logo.png';
+import logoImage from '/assets/logo.svg';
 import '../../styles/components/nav.scss';
 
 export default function Nav() {
