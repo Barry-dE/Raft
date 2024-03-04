@@ -1,3 +1,4 @@
+import Benefits from './components/Benefits/Benefits';
 import Companies from './components/Companies/Companies';
 import Services from './components/Features/Features';
 import Fees from './components/Fees/Fees';
@@ -15,6 +16,7 @@ function App() {
             <Companies />
             <Services />
             <Fees />
+            <Benefits />
         </>
     );
 }

@@ -37,7 +37,7 @@ function Fees() {
                         <div className="fees__gallery__media__icon fees__gallery__media__icon--left">
                             <div className="fees__gallery__media__icon__green">
                                 <figure>
-                                    <img src={moneySend} alt="" />
+                                    <img src={moneySend} alt="Money sent" />
                                 </figure>
                             </div>
                             <div className="fees__gallery__media__icon__text">
@@ -48,7 +48,10 @@ function Fees() {
                         <div className="fees__gallery__media__icon fees__gallery__media__icon--right">
                             <div className="fees__gallery__media__icon__red">
                                 <figure>
-                                    <img src={moneyRecieved} alt="" />
+                                    <img
+                                        src={moneyRecieved}
+                                        alt="Money received"
+                                    />
                                 </figure>
                             </div>
                             <div className="fees__gallery__media__icon__text">
