@@ -17,6 +17,10 @@
         &_image {
             width: 180rem;
             border-radius: 2rem;
+            object-fit: cover;
+            @include media('<phone') {
+                width: 34.2rem;
+            }
         }
     }
 

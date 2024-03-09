@@ -2,6 +2,9 @@
     width: $width;
     height: 6.7rem;
     border-bottom: 1px solid $color-mine-shaft;
+    @include media('<phone') {
+        width: 100vw;
+    }
 
     &_wrapper {
         width: $width;
@@ -28,6 +31,9 @@
     }
 
     &_info {
+        // @include media('<phone') {
+        //     display: none;
+        // }
         &_items {
             @extend %center;
             gap: 4rem;

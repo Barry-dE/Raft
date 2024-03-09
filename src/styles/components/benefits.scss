@@ -1,10 +1,11 @@
 .benefits {
-    @extend %dimension;
     background-color: #48d64c;
+    height: 100vh;
 }
 
 .benefits__wrapper {
-    height: 90rem;
+    // height: 90rem;
+    @extend %dimension;
 }
 .benefits__text {
     @extend %title-128;

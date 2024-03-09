@@ -1,6 +1,7 @@
-@import "./base/reset";
-@import "./base/typography";
+@import './utils/responsive';
+@import './base/reset';
+@import './base/typography';
 
-@import "./shared/titles.scss";
-@import "./shared/buttons.scss";
-@import "./shared/description.scss";
+@import './shared/titles.scss';
+@import './shared/buttons.scss';
+@import './shared/description.scss';
