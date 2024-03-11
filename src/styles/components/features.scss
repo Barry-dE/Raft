@@ -48,10 +48,10 @@
     grid-template-columns: 82.2rem 44.2rem;
     margin-bottom: 4rem;
     gap: 2rem;
-    // @include media('<=phone') {
-    //     grid-template-columns: 150rem;
-    //     grid-gap: 10rem;
-    // }
+    @include media('<=phone') {
+        grid-template-columns: 120rem;
+        // grid-gap: 10rem;
+    }
 }
 
 .services__grid__item {
@@ -81,7 +81,7 @@
     height: 48rem;
     border-radius: 1.2rem;
 
-    // @include media('<=phone') {
-    //     height: 80rem;
-    // }
+    @include media('<=phone') {
+        height: 100rem;
+    }
 }

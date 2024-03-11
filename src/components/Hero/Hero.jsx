@@ -22,7 +22,7 @@ function Hero() {
                                 <p className="hero__content__marquee__text__paragraph">
                                     Introducing Raft cards
                                 </p>
-                                <IoChevronForward size={'2rem'} />
+                                <IoChevronForward size={'3rem'} />
                             </div>
                         </div>
                         <div className="hero__content__title">

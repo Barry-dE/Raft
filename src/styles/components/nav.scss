@@ -3,7 +3,7 @@
     height: 6.7rem;
     border-bottom: 1px solid $color-mine-shaft;
     @include media('<=phone') {
-        height: 20rem;
+        height: 12rem;
     }
 
     &_wrapper {
