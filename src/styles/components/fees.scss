@@ -2,7 +2,7 @@
     @extend %dimension;
     margin-top: 13rem;
     @include media('<=phone') {
-        height: 70vh;
+        height: 100%;
     }
 
     &__wrapper {
@@ -23,9 +23,16 @@
     @extend %title-76;
     text-align: center;
     margin-bottom: 2.4rem;
+    @include media('<=phone') {
+        font-weight: 400;
+    }
 }
 
 .fees__text__description {
+    @include media('<=phone') {
+        font-size: 3rem;
+    }
+
     span {
         display: inline-block;
         width: 100%;
@@ -39,6 +46,10 @@
     height: 61.5rem;
     margin-top: 12.4rem;
     position: relative;
+    @include media('<=phone') {
+        width: 100%;
+        height: 100rem;
+    }
 }
 
 .fees__gallery__media__image {
@@ -47,6 +58,9 @@
     @extend %cover;
     object-fit: cover;
     border-radius: 1.2rem;
+    @include media('<=phone') {
+        height: 100%;
+    }
 }
 
 .fees__gallery__media__icons {
@@ -117,7 +131,7 @@
 
 .fees__perks {
     width: 129.6rem;
-    height: 8.7rem;
+    // height: 8.7rem;
     margin-top: 11.9rem;
     margin-bottom: 13.2rem;
     @include media('<=phone') {
@@ -129,6 +143,9 @@
     @extend %dimension;
     display: flex;
     gap: 2.4rem;
+    @include media('<=phone') {
+        width: 100%;
+    }
 
     figure {
         img {
@@ -139,7 +156,8 @@
 
     @include media('<=phone') {
         flex-direction: column;
-        gap: 3.2rem;
+        gap: 4rem;
+        padding: 0 5rem;
     }
 }
 
@@ -148,6 +166,9 @@
     gap: 1rem;
     display: flex;
     flex-direction: column;
+    @include media('<=phone') {
+        gap: 4rem;
+    }
 }
 
 .fees__perks__item__icon {
@@ -157,11 +178,18 @@
     font-weight: 400;
     @extend %dimension;
     height: 2.9rem;
+    @include media('<=phone') {
+        font-size: 4rem;
+    }
 }
 
 .fees__perks__item__description {
     font-size: 1.5rem;
     line-height: 1.4;
+    @include media('<=phone') {
+        width: 100%;
+        font-size: 3rem;
+    }
 }
 
 // .fees__gallery__media__icon {

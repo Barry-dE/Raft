@@ -36,11 +36,7 @@
     @extend %description-20;
     margin-top: 2.4rem;
     text-align: center;
-    // @include media('<=phone') {
-    //     // use for all page title and description on mobile
-    //     font-size: 3rem;
-    //     width: 110rem;
-    // }
+    @include phone;
 }
 
 .services__gridLayout__wrapper {
