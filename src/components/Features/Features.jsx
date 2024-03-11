@@ -9,8 +9,7 @@ function Services() {
             <div className="services__wrapper">
                 <div className="services__text">
                     <div className="services__text__title">
-                        <p>Elevate Your Financial </p>
-                        <p> Journey with RAFT</p>
+                        <p>Elevate Your Financial Journey with RAFT</p>
                     </div>
                     <div className="services__text__description">
                         <p>

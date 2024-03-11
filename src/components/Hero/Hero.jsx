@@ -27,17 +27,16 @@ function Hero() {
                         </div>
                         <div className="hero__content__title">
                             <div className="hero__content__title_text">
-                                <p>Building the future of </p>
-                                <p>banking</p>
+                                <p>Building the future of banking</p>
                             </div>
                         </div>
                         <div className="hero__content__title__description">
                             <div className="hero__content__title__description__text">
                                 <p>
                                     Experience the future of banking with RAFT.
-                                    We are here to
+                                    We are here to empower your financial
+                                    journey
                                 </p>
-                                <p>empower your financial journey.</p>
                             </div>
                         </div>
                         <button className="hero__content__button">
