@@ -1,15 +1,16 @@
 .hero {
     @extend %dimension;
     margin-bottom: 12rem;
-    // height: 100vh;
-    // @include media('<=phone') {
-    //     top: 9rem;
-    // }
+
+    @include media('<=phone') {
+        border: 1px solid red;
+        // margin-top: 10rem;
+    }
 
     // padding-bottom: 10rem;
 
-    @include media('<phone') {
-        height: calc(100vh - 30rem);
+    @include media('<=phone') {
+        // height: calc(80vh - 25rem);
         // margin-bottom: 24rem;
         display: flex;
         align-items: center;

@@ -9,7 +9,7 @@ import Nav from './components/Nav/Nav';
 
 function App() {
     return (
-        <div className="raft__wrapper">
+        <>
             <Header>
                 <Nav />
             </Header>
@@ -19,7 +19,7 @@ function App() {
             <Fees />
             <Benefits />
             <Footer />
-        </div>
+        </>
     );
 }
 
