@@ -2,8 +2,8 @@
     width: $width;
     height: 6.7rem;
     border-bottom: 1px solid $color-mine-shaft;
-    @include media('<phone') {
-        width: 100vw;
+    @include media('<=phone') {
+        height: 20rem;
     }
 
     &_wrapper {

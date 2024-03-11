@@ -26,21 +26,21 @@
     @extend %title-76;
     font-weight: 400;
     text-align: center;
-    @include media('<=phone') {
-        @include title-100;
-        width: 120rem;
-    }
+    // @include media('<=phone') {
+    //     @include title-100;
+    //     width: 120rem;
+    // }
 }
 .services__text__description {
     width: 71.8rem;
     @extend %description-20;
     margin-top: 2.4rem;
     text-align: center;
-    @include media('<=phone') {
-        // use for all page title and description on mobile
-        font-size: 3rem;
-        width: 110rem;
-    }
+    // @include media('<=phone') {
+    //     // use for all page title and description on mobile
+    //     font-size: 3rem;
+    //     width: 110rem;
+    // }
 }
 
 .services__gridLayout__wrapper {
@@ -48,10 +48,10 @@
     grid-template-columns: 82.2rem 44.2rem;
     margin-bottom: 4rem;
     gap: 2rem;
-    @include media('<=phone') {
-        grid-template-columns: 150rem;
-        grid-gap: 10rem;
-    }
+    // @include media('<=phone') {
+    //     grid-template-columns: 150rem;
+    //     grid-gap: 10rem;
+    // }
 }
 
 .services__grid__item {
@@ -81,7 +81,7 @@
     height: 48rem;
     border-radius: 1.2rem;
 
-    @include media('<=phone') {
-        height: 80rem;
-    }
+    // @include media('<=phone') {
+    //     height: 80rem;
+    // }
 }
