@@ -1,8 +1,9 @@
 .hero {
     @extend %dimension;
     margin-bottom: 12rem;
-
+    padding-top: 10rem;
     @include media('<=phone') {
+        padding-top: 15rem;
         // margin-top: 10rem;
     }
 
