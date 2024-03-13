@@ -13,7 +13,7 @@ function FeaturesGridThree() {
                 </figure>
             </div>
             <div className="features__grid__item__text">
-                <h3>Financial Planning</h3>
+                <h3 data-animation="header">Financial Planning</h3>
                 <p>
                     <span>
                         Achieve your financial dreams with our comprehensive

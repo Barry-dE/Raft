@@ -47,13 +47,10 @@ function FeaturesGridOne() {
             </div>
 
             <div className="features__grid__item__text">
-                <h3>Seamless Payments</h3>
+                <h3> Seamless Payments</h3>
                 <p>
-                    <span>
-                        Enjoy secure, seamless transactions that make managing
-                        your money a
-                    </span>
-                    <span>breeze.</span>
+                    Enjoy secure, seamless transactions that make managing your
+                    money a breeze
                 </p>
             </div>
         </>

@@ -2,6 +2,7 @@ import '../../styles/components/features.scss';
 import GridBackground from './GridBackground';
 import FeaturesGridOne from './FeaturesGridOne';
 import FeaturesGridThree from './FeaturesGridThree';
+import FeaturesGridTwo from './FeaturesGridTwo';
 
 function Services() {
     return (
@@ -9,7 +10,9 @@ function Services() {
             <div className="services__wrapper">
                 <div className="services__text">
                     <div className="services__text__title">
-                        <p>Elevate Your Financial Journey with RAFT</p>
+                        <p data-animation="header">
+                            Elevate Your Financial Journey with RAFT
+                        </p>
                     </div>
                     <div className="services__text__description">
                         <p>
@@ -27,6 +30,7 @@ function Services() {
                         </div>
                         <div className="services__grid__item services__grid__item--2">
                             <GridBackground />
+                            <FeaturesGridTwo />
                         </div>
                         <div className="services__grid__item services__grid__item--3">
                             <GridBackground />

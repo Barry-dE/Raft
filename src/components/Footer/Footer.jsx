@@ -7,7 +7,7 @@ function Footer() {
         <footer className="footer">
             <div className="footer__wrapper">
                 <div className="footer__header">
-                    <p className="footer__header__text">
+                    <p className="footer__header__text" data-animation="header">
                         Frequently asked questions
                     </p>
                 </div>

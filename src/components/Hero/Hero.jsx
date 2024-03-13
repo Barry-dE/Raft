@@ -27,12 +27,14 @@ function Hero() {
                         </div>
                         <div className="hero__content__title">
                             <div className="hero__content__title_text">
-                                <p>Building the future of banking</p>
+                                <p data-animation="header">
+                                    Building the future of banking
+                                </p>
                             </div>
                         </div>
                         <div className="hero__content__title__description">
                             <div className="hero__content__title__description__text">
-                                <p>
+                                <p data-animation="paragraph">
                                     Experience the future of banking with RAFT.
                                     We are here to empower your financial
                                     journey

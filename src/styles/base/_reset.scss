@@ -79,15 +79,36 @@ q {
     quotes: none;
 }
 
-// blockquote:before,
-// blockquote:after,
-// q:before,
-// q:after {
-//     content: '';
-//     content: none;
-// }
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+[data-animation='header'],
+[data-animation='paragraph'] {
+    white-space: pre-wrap;
+
+    span {
+        overflow-y: hidden;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+h3 {
+    span {
+        overflow-y: hidden;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+    }
 }

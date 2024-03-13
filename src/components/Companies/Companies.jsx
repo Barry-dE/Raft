@@ -21,7 +21,7 @@ function Companies() {
                 </div>
                 <div className="companies_featured">
                     <div className="companies_featured_wrapper">
-                        <p>featured and seen on </p>
+                        <p data-animation="header">featured and seen on </p>
                         <div className="companies_featured_logo">
                             <figure className="companies_feature_image">
                                 <img

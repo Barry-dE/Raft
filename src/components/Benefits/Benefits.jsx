@@ -4,11 +4,22 @@ function Benefits() {
         <div className="benefits">
             <div className="benefits__wrapper">
                 <div className="benefits__text">
-                    <p className="benefits__text__content">
+                    <p
+                        className="benefits__text__content"
+                        data-animation="header"
+                    >
                         Smart Investments,
                     </p>
-                    <p className="benefits__text__content">Secure payments,</p>
-                    <p className="benefits__text__content">
+                    <p
+                        className="benefits__text__content"
+                        data-animation="header"
+                    >
+                        Secure payments,
+                    </p>
+                    <p
+                        className="benefits__text__content"
+                        data-animation="header"
+                    >
                         and expert guidance
                     </p>
                     <p className="benefits__text__content">
