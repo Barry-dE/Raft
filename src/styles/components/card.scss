@@ -30,7 +30,8 @@
     color: $color-emerald;
     margin-bottom: 1.6rem;
     @include media('<=phone') {
-        font-size: 2rem;
+        font-size: 4rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -55,8 +56,10 @@
     height: 40rem;
     width: 35.5rem;
     @include media('<=phone') {
-        height: 60rem;
-        width: 50rem;
+        height: 100rem;
+        width: 80rem;
+        margin-bottom: 25rem;
+        margin-top: 15rem;
     }
 }
 

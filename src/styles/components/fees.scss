@@ -3,6 +3,7 @@
     margin-top: 13rem;
     @include media('<=phone') {
         height: 100%;
+        margin-top: 30rem;
     }
 
     &__wrapper {
