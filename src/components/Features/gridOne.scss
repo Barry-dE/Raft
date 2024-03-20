@@ -88,7 +88,7 @@
 
 .features__grid__item__text {
     width: 52.9rem;
-    height: 9.2rem;
+    // height: 9.2rem;
     position: absolute;
     left: 4rem;
     bottom: 4rem;
@@ -97,19 +97,16 @@
     flex-direction: column;
     @include media('<=phone') {
         width: 90rem;
-        bottom: 13rem;
+        bottom: 9rem;
         left: 8rem;
     }
     h3 {
         @extend %title-32;
         @include media('<=phone') {
-            font-size: 5rem;
+            font-size: 7rem;
         }
     }
     span {
         @extend %description-16;
-        @include media('<=phone') {
-            font-size: 3rem;
-        }
     }
 }

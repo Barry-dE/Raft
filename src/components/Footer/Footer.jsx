@@ -1,8 +1,10 @@
 import '../../styles/components/footer.scss';
 import { IoChevronForward } from 'react-icons/io5';
 import logoImage from '/assets/logo.svg';
+import { useState } from 'react';
 
 function Footer() {
+    const { open, setOpen } = useState(false);
     return (
         <footer className="footer">
             <div className="footer__wrapper">
@@ -13,27 +15,64 @@ function Footer() {
                 </div>
                 <div className="footer__questions">
                     <div className="footer__question">
-                        <p>How do I create an account with RAFT?</p>
-                        <IoChevronForward className="footer__question__icon" />
+                        <div className="footer__question__wrapper">
+                            <p>How do I create an account with RAFT?</p>
+                            <IoChevronForward className="footer__question__icon" />
+                        </div>
+                        {open && (
+                            <div className="footer__question__answer">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Esse nihil quaerat libero non
+                                deserunt ab temporibus, accusamus laboriosam
+                                alias, ex, illum aut tempore quidem expedita
+                                molestias nisi accusantium similique? Dolorem!
+                            </div>
+                        )}
                     </div>
                     <div className="footer__question">
-                        <p>
-                            How does RAFT ensure the security of my financial
-                            data?
-                        </p>
-                        <IoChevronForward className="footer__question__icon" />
+                        <div className="footer__question__wrapper">
+                            <p>How do I create an account with RAFT?</p>
+                            <IoChevronForward className="footer__question__icon" />
+                        </div>
+                        {open && (
+                            <div className="footer__question__answer">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Esse nihil quaerat libero non
+                                deserunt ab temporibus, accusamus laboriosam
+                                alias, ex, illum aut tempore quidem expedita
+                                molestias nisi accusantium similique? Dolorem!
+                            </div>
+                        )}
                     </div>
                     <div className="footer__question">
-                        <p>
-                            What types of transactions can I perform with RAFT?
-                        </p>
-                        <IoChevronForward className="footer__question__icon" />
+                        <div className="footer__question__wrapper">
+                            <p>How do I create an account with RAFT?</p>
+                            <IoChevronForward className="footer__question__icon" />
+                        </div>
+                        {open && (
+                            <div className="footer__question__answer">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Esse nihil quaerat libero non
+                                deserunt ab temporibus, accusamus laboriosam
+                                alias, ex, illum aut tempore quidem expedita
+                                molestias nisi accusantium similique? Dolorem!
+                            </div>
+                        )}
                     </div>
                     <div className="footer__question">
-                        <p>
-                            What benefits does RAFT offer for wealth management?
-                        </p>
-                        <IoChevronForward className="footer__question__icon" />
+                        <div className="footer__question__wrapper">
+                            <p>How do I create an account with RAFT?</p>
+                            <IoChevronForward className="footer__question__icon" />
+                        </div>
+                        {open && (
+                            <div className="footer__question__answer">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Esse nihil quaerat libero non
+                                deserunt ab temporibus, accusamus laboriosam
+                                alias, ex, illum aut tempore quidem expedita
+                                molestias nisi accusantium similique? Dolorem!
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="footer__info">
@@ -53,24 +92,38 @@ function Footer() {
                                     <div className="footer__Info__item__info__content">
                                         <h3>About Us</h3>
                                         <div className="footer__info__Item__content__text">
-                                            <p>Our Company</p>
-                                            <p>Careers</p>
-                                            <p>Press Kits</p>
+                                            <p data-animation="header">
+                                                Our Company
+                                            </p>
+                                            <p data-animation="header">
+                                                Careers
+                                            </p>
+                                            <p data-animation="header">
+                                                Press Kits
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="footer__Info__item__info__content">
                                         <h3>Legal</h3>
                                         <div className="footer__info__Item__content__text">
-                                            <p>Terms of use</p>
-                                            <p>Privacy Policy</p>
-                                            <p>About Us</p>
+                                            <p data-animation="header">
+                                                Terms of use
+                                            </p>
+                                            <p data-animation="header">
+                                                Privacy Policy
+                                            </p>
+                                            <p data-animation="header">
+                                                About Us
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="footer__Info__item__info__content">
-                                        <h3>Support</h3>
+                                        <h3 data-animation="header">Support</h3>
                                         <div className="footer__info__Item__content__text">
-                                            <p>Contact Us</p>
-                                            <p>FAQ</p>
+                                            <p data-animation="header">
+                                                Contact Us
+                                            </p>
+                                            <p data-animation="header">FAQ</p>
                                         </div>
                                     </div>
                                 </div>
@@ -91,5 +144,11 @@ function Footer() {
         </footer>
     );
 }
+
+// get all the accordion
+
+// loop and check if the current item is the clicked one
+
+// if true, only show that one
 
 export default Footer;

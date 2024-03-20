@@ -2,11 +2,9 @@ import Lenis from '@studio-freight/lenis';
 
 function smoothScroll() {
     const lenis = new Lenis({
-        duration: 1.8,
+        duration: 1.6,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         infinite: false,
-        // orientation: 'vertical',
-        // smoothWheel: true,
         smooth: true,
     });
 

@@ -13,13 +13,11 @@ function FeaturesGridThree() {
                 </figure>
             </div>
             <div className="features__grid__item__text">
-                <h3 data-animation="header">Financial Planning</h3>
-                <p>
-                    <span>
-                        Achieve your financial dreams with our comprehensive
-                        financial planning
-                    </span>
-                    <span>services, guiding you toward a secure future.</span>
+                <h3>Financial Planning</h3>
+                <p className="grid__description">
+                    Achieve your financial dreams with our comprehensive
+                    financial planning services, guiding you toward a secure
+                    future.
                 </p>
             </div>
         </>

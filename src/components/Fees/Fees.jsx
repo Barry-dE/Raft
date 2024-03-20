@@ -17,13 +17,11 @@ function Fees() {
                         </p>
                     </div>
                     <div className="fees__text__description">
-                        <span data-animation="paragraph">
+                        <p data-animation="paragraph">
                             We believe that managing your finances should be
-                            effortless and cost-effective,
-                        </span>
-                        <span data-animation="paragraph">
-                            That is why we offer you the freedom you deserve
-                        </span>
+                            effortless and cost-effective, That is why we offer
+                            you the freedom you deserve
+                        </p>
                     </div>
                 </div>
                 <div className="fees__gallery__media">
@@ -70,12 +68,12 @@ function Fees() {
                                 <figure>
                                     <img src={bankNotes} alt="" />
                                 </figure>
-                                <p
+                                <h3
                                     className="fees_perks__item__title"
                                     data-animation="header"
                                 >
                                     No minimum balance fees
-                                </p>
+                                </h3>
                             </div>
 
                             <p className="fees__perks__item__description">
@@ -88,12 +86,12 @@ function Fees() {
                                 <figure>
                                     <img src={circlestack} alt="" />
                                 </figure>
-                                <p
+                                <h3
                                     className="fees_perks__item__title"
                                     data-animation="header"
                                 >
                                     No monthly fees
-                                </p>
+                                </h3>
                             </div>
 
                             <p className="fees__perks__item__description">
@@ -107,12 +105,12 @@ function Fees() {
                                 <figure>
                                     <img src={arrowsRightLeft} alt="" />
                                 </figure>
-                                <p
+                                <h3
                                     className="fees_perks__item__title"
                                     data-animation="header"
                                 >
                                     No bank transfer fees
-                                </p>
+                                </h3>
                             </div>
 
                             <p className="fees__perks__item__description">

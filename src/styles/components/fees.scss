@@ -17,6 +17,7 @@
 .fees__text {
     width: 89.6rem;
     height: 26.2rem;
+    position: relative;
 }
 
 .fees__text__title {
@@ -29,8 +30,18 @@
 }
 
 .fees__text__description {
+    @extend %description-20;
+    text-align: center;
+    width: 80rem;
+    margin-left: 6rem;
     @include media('<=phone') {
-        font-size: 3rem;
+        margin-bottom: 5rem;
+        margin-top: 3rem;
+        text-align: center;
+        width: 104rem;
+        font-size: $description-font-mobile;
+        position: absolute;
+        left: -21px;
     }
 
     span {
@@ -60,6 +71,7 @@
     border-radius: 1.2rem;
     @include media('<=phone') {
         height: 100%;
+        top: 17rem;
     }
 }
 
@@ -79,7 +91,6 @@
     border-radius: 0.8rem;
     display: flex;
     border: 1px solid #070606;
-
     justify-content: flex-start;
     flex-direction: column;
 
@@ -95,12 +106,19 @@
         left: 16.7rem;
         top: 16.7rem;
         padding: 1.2rem 0.8rem;
+        @include media('<=phone') {
+            top: 60rem;
+            left: 6rem;
+        }
     }
     &--right {
         position: absolute;
         left: 87.9rem;
         bottom: 6.2rem;
         padding: 1.2rem 0.8rem;
+        @include media('<=phone') {
+            left: 97rem;
+        }
     }
 }
 
@@ -131,7 +149,6 @@
 
 .fees__perks {
     width: 129.6rem;
-    // height: 8.7rem;
     margin-top: 11.9rem;
     margin-bottom: 13.2rem;
     @include media('<=phone') {
@@ -145,12 +162,18 @@
     gap: 2.4rem;
     @include media('<=phone') {
         width: 100%;
+        margin-top: 18rem;
+        gap: 2.4rem;
     }
 
     figure {
         img {
             width: 2.4rem;
             height: 2.4rem;
+            @include media('<phone') {
+                width: 10rem;
+                height: 10rem;
+            }
         }
     }
 
@@ -167,7 +190,10 @@
     display: flex;
     flex-direction: column;
     @include media('<=phone') {
-        gap: 4rem;
+        gap: 10rem;
+        &:not(:last-child) {
+            margin-bottom: 9rem;
+        }
     }
 }
 
@@ -175,20 +201,27 @@
     display: flex;
     gap: 1.5rem;
     @extend %description-24;
-    font-weight: 400;
+    // font-weight: 400;
     @extend %dimension;
     height: 2.9rem;
-    @include media('<=phone') {
-        font-size: 4rem;
+    @include media('<phone') {
+        gap: 5rem;
     }
 }
 
 .fees__perks__item__description {
     font-size: 1.5rem;
     line-height: 1.4;
-    @include media('<=phone') {
+    @include media('<phone') {
         width: 100%;
-        font-size: 3rem;
+        font-size: $description-font-mobile;
+    }
+}
+
+.fees_perks__item__title {
+    @extend %description-24;
+    @include media('<=phone') {
+        font-size: 7rem;
     }
 }
 

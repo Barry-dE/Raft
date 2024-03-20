@@ -3,7 +3,8 @@
     margin-bottom: 12rem;
     padding-top: 10rem;
     @include media('<=phone') {
-        padding-top: 15rem;
+        padding-top: 10rem;
+        height: 100vh;
     }
 
     // padding-bottom: 10rem;
@@ -27,7 +28,7 @@
     width: 97.6rem;
     height: 50.3rem;
     // border: 1px solid red;
-    margin-top: calc(16.7rem - 6.7rem);
+    margin-top: 3rem;
     text-align: center;
     position: relative;
     @include media('<=phone') {
@@ -75,6 +76,7 @@
     @extend %dimension;
     @include flex(space-between, center, _, column);
     @extend %cover;
+    // padding: 2rem 0;
     @include media('<=phone') {
         padding: 4rem 0;
     }
@@ -131,7 +133,7 @@
     width: 70rem;
 
     @include media('<=phone') {
-        font-size: 5rem;
+        font-size: $description-font-mobile;
         width: 110rem;
     }
 }
@@ -150,8 +152,10 @@
     position: relative;
     z-index: 99;
     @include media('<=phone') {
-        width: 24.5rem;
-        height: 9rem;
+        width: 30rem;
+        height: 12rem;
         font-size: 2.6rem;
+        // @extend %description-20;
+        font-size: 2.5rem;
     }
 }

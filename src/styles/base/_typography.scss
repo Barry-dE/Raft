@@ -1,6 +1,13 @@
 @font-face {
-  font-family: "SF pro";
-  src: url("src/font/sf-pro-display_regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'SF pro';
+    src: url('src/font/sf-pro-display_regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueBit';
+    src: url('src/font/PPNeueBit-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }

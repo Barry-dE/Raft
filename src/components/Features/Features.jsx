@@ -3,6 +3,7 @@ import GridBackground from './GridBackground';
 import FeaturesGridOne from './FeaturesGridOne';
 import FeaturesGridThree from './FeaturesGridThree';
 import FeaturesGridTwo from './FeaturesGridTwo';
+import FeaturesGridFour from './featuresGridFour';
 
 function Services() {
     return (
@@ -38,6 +39,7 @@ function Services() {
                         </div>
                         <div className="services__grid__item services__grid__item--4">
                             <GridBackground />
+                            <FeaturesGridFour />
                         </div>
                     </div>
                 </div>

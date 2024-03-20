@@ -106,11 +106,11 @@ function FeaturesGridTwo() {
                     </div>
                 </div>
                 <div className="features__grid__item__text">
-                    <h3 data-animation="header"> Smart Investing</h3>
+                    <h3> Smart Investing</h3>
                     <p>
-                        Grow your wealth confidently with our personalized
-                        investment solutions, <br /> tailored to your financial
-                        goals.
+                        Grow your wealth confidently with our personalized{' '}
+                        <br />
+                        investment solutions, tailored to your financial goals.
                     </p>
                 </div>
             </div>

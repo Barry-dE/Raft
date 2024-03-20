@@ -20,7 +20,10 @@ export default function Nav() {
                 <div className="navigation_info">
                     <div className="naviagtion_info_wrapper">
                         <ul className="navigation_info_items">
-                            <li className="navigation_info_item">Solutions</li>
+                            <li className="navigation_info_item">
+                                Solutions
+                                <a href="#services"></a>
+                            </li>
                             <li className="navigation_info_item">Learn</li>
                             <li className="navigation_info_item">About</li>
                         </ul>

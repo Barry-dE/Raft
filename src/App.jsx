@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import Benefits from './components/Benefits/Benefits';
 import Companies from './components/Companies/Companies';
 import Services from './components/Features/Features';
 import Fees from './components/Fees/Fees';
@@ -9,6 +8,7 @@ import Hero from './components/Hero/Hero';
 import Nav from './components/Nav/Nav';
 import splitText from './animation/text';
 import smoothScroll from './animation/smoothScroll';
+import DebitCards from './components/DebitCards/DebitCards';
 smoothScroll();
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
             <Companies />
             <Services />
             <Fees />
-            <Benefits />
+            <DebitCards />
             <Footer />
         </>
     );

@@ -1,8 +1,11 @@
 .features__grid--3 {
     figure {
+        @extend %dimension;
         img {
             height: 20.3rem;
-            // width: 29.3rem;
+            @include media('<=phone') {
+                height: 40rem;
+            }
         }
     }
 }

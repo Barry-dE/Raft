@@ -22,13 +22,38 @@ function splitText() {
             gsap.to(headerElements, {
                 opacity: 1,
                 yPercent: 0,
-                stagger: headerElements.length > 100 ? 0.01 : 0.02,
+                stagger: headerElements.length > 100 ? 0.03 : 0.04,
                 duration: headerElements.length > 100 ? 0.5 : 0.6,
                 ease: 'easeOut',
-                delay: 0.3,
+                delay: 0.2,
             });
         });
     });
+
+    //
+
+    //     paragraph.forEach((item) => {
+    //         const line = Splitting({
+    //             target: item,
+    //             by: 'lines',
+    //         });
+
+    //         line.forEach((splitItem) => {
+    //             const wrapLines = splitItem.words
+    //                 .map((wordsArray) => {
+    //                     return `<span class='word__Wrap'>${wordsArray.textContent}</span>`;
+    //                 })
+    //                 .join(' ');
+    //             splitItem.el.innerHTML = wrapLines; // Use innerHTML to add the wrapped words back to the DOM
+    //         });
+
+    //         gsap.set(item.querySelectorAll('.word'), {
+    //             yPercent: 107,
+    //             opacity: 0,
+    //             transformStyle: 'preserve-3d',
+    //             rotateX: 50,
+    //         });
+    //     });
 }
 
 export default splitText;

@@ -1,0 +1,132 @@
+.debit__cards {
+    @extend %dimension;
+    @include media('<=phone') {
+        height: 100%;
+    }
+}
+
+.debit__cards__wrapper {
+    @extend %dimension;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19rem 0;
+    @include media('<=phone') {
+        height: 100%;
+    }
+}
+
+.debit__cards__title {
+    width: 89.6rem;
+    height: 32.7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.debit__cards__title__introduction__text {
+    @extend %description-18;
+    text-transform: uppercase;
+    color: $color-emerald;
+    margin-bottom: 1.6rem;
+    @include media('<=phone') {
+        font-size: 2rem;
+    }
+}
+
+.debit__cards__title__title {
+    @extend %title-76;
+    margin-bottom: 2.4rem;
+}
+
+.debit__cards__title__description {
+    @extend %description-20;
+    width: 60rem;
+    text-align: center;
+    @include media('<phone') {
+        width: 120rem;
+        font-size: $description-font-mobile;
+        text-align: center;
+        margin-top: 3rem;
+    }
+}
+
+.card {
+    height: 40rem;
+    width: 35.5rem;
+    @include media('<=phone') {
+        height: 60rem;
+        width: 50rem;
+    }
+}
+
+.debit__cards__card {
+    //
+    @include media('<=phone') {
+        margin-top: 20rem;
+    }
+}
+
+.debit__cards__perks {
+    width: 131.6rem;
+    margin-top: 10rem;
+}
+
+.debit__cards__perks__wrapper {
+    @extend %dimension;
+    display: flex;
+    gap: 4rem;
+    @include media('<=phone') {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 0rem;
+    }
+}
+
+.debit__cards__perks__items {
+    width: 47rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include media('<=phone') {
+        width: 100%;
+        height: 100%;
+        &:not(:last-child) {
+            margin-bottom: 9rem;
+        }
+
+        gap: 5rem;
+        padding: 0 5rem;
+    }
+}
+
+.debit__cards__perk__item {
+    display: flex;
+    gap: 1.5rem;
+    @include media('<=phone') {
+        gap: 5rem;
+    }
+
+    svg {
+        height: 2.9rem;
+        @include media('<=phone') {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+    h3 {
+        @extend %description-24;
+        @include media('<=phone') {
+            font-size: 7rem;
+        }
+    }
+}
+
+.debit__cards__perk__item__description {
+    @extend %description-16;
+    @include media('<=phone') {
+        font-size: $description-font-mobile;
+    }
+}

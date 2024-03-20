@@ -1,0 +1,33 @@
+.features__grid__four {
+    @extend %dimension;
+}
+
+.features__grid__four__card {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    @include media('<=phone') {
+        margin-top: 8rem;
+    }
+    figure {
+        img {
+            width: 35rem;
+            border-radius: 2rem;
+
+            @include media('<=phone') {
+                width: 80rem;
+                border-radius: 4rem;
+            }
+        }
+    }
+}
+
+.features__grid__text {
+    p {
+        width: 37rem;
+
+        @include media('<=phone') {
+            width: 90rem;
+        }
+    }
+}
